@@ -1,9 +1,8 @@
-"""Functions used in Exercise 8 of Geol 197 GDAM"""
+"""Functions used in the Introduction to Quantitative Geology course"""
 
-# Import any modules needed in your functions here
 import math
+import numpy as np
 
-# Define your new functions below
-def mean(x):
-    sum(mea
 
+def gaussian(x, mean, std):
+    return (1 / (std * np.sqrt(2 * np.pi))) * np.exp(-((x - mean) ** 2) / (2 * std ** 2))
